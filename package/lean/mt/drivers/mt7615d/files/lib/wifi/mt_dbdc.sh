@@ -35,12 +35,12 @@ detect_mt_dbdc() {
 						htmode=HT20
 						pb_smart=1
 						noscan=0
-						ssid="OpenWRT-2.4G-$(echo $macaddr | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
+						ssid="NothingWrt-2.4G-$(echo $macaddr | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
 						;;
 					rax0)
 						hwmode=11a
 						htmode=VHT80
-						ssid="OpenWRT-5G-$(maccalc add $macaddr 3145728 | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
+						ssid="NothingWrt-5G-$(maccalc add $macaddr 3145728 | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
 						pb_smart=0
 						noscan=1
 						;;
