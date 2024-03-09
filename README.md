@@ -31,7 +31,7 @@ All you need are these simple features.
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/NothingWrt/lede --recurse-submodules
+   git clone https://github.com/NothingWrt/lede
    cd lede
    ./scripts/feeds update -a
    ./scripts/feeds install -a
